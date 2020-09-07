@@ -1,0 +1,32 @@
+.display-4{
+  color: rgb(2, 36, 37);
+  font-variant: small-caps;
+  font-weight: 400;
+}
+.lead{
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.651);
+}
+.website-name{
+ padding: 2rem;
+ padding-bottom: 0;
+ padding-top: 0;
+ color: black;
+ font-weight: bold;
+ font-size: medium;
+}
+
+.trailing{
+  margin-left: 70%;
+  color: rgba(0, 0, 0, 0.747);
+}
+
+.jumbotron-fluid{
+  background-image: url('../../../assets/background06.jpg');
+  background-size: cover;
+}
+
+.circle-link {
+  cursor: pointer;
+}
+

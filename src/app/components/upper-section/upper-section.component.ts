@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./upper-section.component.css']
 })
 export class UpperSectionComponent implements OnInit {
-
+  infoMessage = '';
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  changeInfoMessage(){
+    this.infoMessage = 'We provide you the capability of sharing content of this web site as posts, on your FB pages';
+  }
 }

@@ -9,3 +9,34 @@
   flex-direction: row-reverse;
   padding: 2px;
 }
+
+.image-container{
+  height: 50;
+  width: 50;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.circle-link {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #072579;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: 1s ease-out;
+}
+
+.circle-link:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
