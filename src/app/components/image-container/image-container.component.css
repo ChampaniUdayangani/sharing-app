@@ -1,0 +1,11 @@
+.card{
+  width: 18rem;
+  float: left;
+  margin: 15px;
+}
+
+.btn-container{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 2px;
+}
