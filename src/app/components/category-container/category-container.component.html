@@ -1,0 +1,12 @@
+<ngb-accordion class="category-container" #a="ngbAccordion" activeIds="custom-panel-1" *ngFor="let category of categories">
+  <ngb-panel id="custom-panel-1">
+    <ng-template ngbPanelHeader let-opened="opened">
+      <div class="d-flex align-items-center justify-content-between">
+        <h5 class="m-0">{{category}}</h5>
+      </div>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      <app-slider></app-slider>
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
