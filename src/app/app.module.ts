@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CategoryContainerComponent } from './components/category-container/category-container.component';
 import { ImageContainerComponent } from './components/image-container/image-container.component';
-import { SliderComponent } from './components/slider/slider.component';
 import { UpperSectionComponent } from './components/upper-section/upper-section.component';
 
 @NgModule({
@@ -13,7 +12,6 @@ import { UpperSectionComponent } from './components/upper-section/upper-section.
     AppComponent,
     CategoryContainerComponent,
     ImageContainerComponent,
-    SliderComponent,
     UpperSectionComponent
   ],
   imports: [

@@ -1,12 +1,21 @@
-<ngb-accordion class="category-container" #a="ngbAccordion" activeIds="custom-panel-1" *ngFor="let category of categories">
+<ngb-accordion class="category-container" activeIds="custom-panel-1" *ngFor="let category of categories">
   <ngb-panel id="custom-panel-1">
-    <ng-template ngbPanelHeader let-opened="opened">
+    <ng-template ngbPanelHeader>
       <div class="d-flex align-items-center justify-content-between">
-        <h5 class="m-0">{{category}}</h5>
+        <h5 class="m-0">
+          <img *ngIf="category == 'Decoration Ideas'" src="./assets/deco.png" />
+          <img *ngIf="category == 'Art Ideas'" src="./assets/art.png" />
+          <img *ngIf="category == 'Cooking Ideas'" src="./assets/cook-book.png" />
+          <img *ngIf="category == 'Clothing Ideas'" src="./assets/clothes.png" />
+          {{category}}
+        </h5>
       </div>
     </ng-template>
     <ng-template ngbPanelContent>
-      <app-slider></app-slider>
+      <app-image-container *ngIf="category == 'Decoration Ideas'" [data]="decoData"></app-image-container>
+      <app-image-container *ngIf="category == 'Art Ideas'" [data]="artData"></app-image-container>
+      <app-image-container *ngIf="category == 'Cooking Ideas'" [data]="cookingData"></app-image-container>
+      <app-image-container *ngIf="category == 'Clothing Ideas'" [data]="clothingData"></app-image-container>
     </ng-template>
   </ngb-panel>
 </ngb-accordion>
