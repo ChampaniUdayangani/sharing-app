@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../data.service';
+
 @Component({
   selector: 'app-upper-section',
   templateUrl: './upper-section.component.html',
@@ -20,7 +21,9 @@ export class UpperSectionComponent implements OnInit {
   connectFBAccount(){
     this.dataService.connectFB()
     .subscribe((response) => {
-      console.log(response);
+      let url = response['url'];
+      console.log(url);
+      window.location.href = url;
     });
   }
 }
