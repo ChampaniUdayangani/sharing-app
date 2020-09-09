@@ -12,9 +12,9 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  connectUrl = 'sharing-app-bc.herokuapp.com/facebook';
-  pageUrl = 'sharing-app-bc.herokuapp.com/pages';
-  postUrl = 'sharing-app-bc.herokuapp.com/posts';
+  connectUrl = 'https://sharing-app-bc.herokuapp.com/facebook';
+  pageUrl = 'https://sharing-app-bc.herokuapp.com//pages';
+  postUrl = 'https://sharing-app-bc.herokuapp.com/posts';
 
   httpOptions = {
     headers: new HttpHeaders({
