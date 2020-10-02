@@ -1,3 +1,9 @@
+// ******************************************************************
+// SSD Assignment 02   - Software Engineering 
+// Udayangani Hamy W.C - IT 1602 3574 
+// Ranawake P I        - IT 1609 7520
+// ******************************************************************
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
