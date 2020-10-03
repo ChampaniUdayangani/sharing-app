@@ -4,10 +4,11 @@
 // Ranawake P I        - IT 1609 7520
 // ******************************************************************
 
+// The main Appllcation modules 
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CategoryContainerComponent } from './components/category-container/category-container.component';
@@ -16,8 +17,13 @@ import { UpperSectionComponent } from './components/upper-section/upper-section.
 
 @NgModule({
   declarations: [
+    // Component for the main Application 
     AppComponent,
+    
+    // Component for the categories section 
     CategoryContainerComponent,
+
+    // Component for the Image placeholders
     ImageContainerComponent,
     UpperSectionComponent
   ],
