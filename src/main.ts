@@ -3,8 +3,6 @@
 // Udayangani Hamy W.C - IT 1602 3574 
 // Ranawake P I        - IT 1609 7520
 // ******************************************************************
-//
-//
 
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';

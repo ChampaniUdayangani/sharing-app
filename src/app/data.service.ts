@@ -9,8 +9,6 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
-
-
 @Injectable({
   providedIn: 'root'
 })
@@ -19,7 +17,6 @@ export class DataService {
 
   // Default Constructor
   constructor(private http: HttpClient) { }
-
 
   // Constants to hold the API callback strings
 
@@ -30,8 +27,6 @@ export class DataService {
   // Connect to facebook
   connectUrl = 'https://sharing-app-bc.herokuapp.com/facebook'; 
   
-  
-
   // Create HTTP Header 
   httpOptions = {
     headers: new HttpHeaders({
@@ -47,7 +42,14 @@ export class DataService {
 
   // Creawte a post with a POST request 
   createPost(imageUrl: string) {
-    const options = {headers: new HttpHeaders({ 'Content-Type': 'application/json' })}; // Creation of the HTTP header
-    const body = { 'url': imageUrl, 'msg': 'Posted Through Snapify web app. Check it out for some cool ideas https://snapify-app.herokuapp.com/' }; return this.http.post(this.postUrl, JSON.stringify(body), options);
+    const options = {
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+    }; // Creation of the HTTP header
+
+    const body = { 
+      'url': imageUrl, 'msg': 'Posted Through Snapify web app. Check it out for some cool ideas https://snapify-app.herokuapp.com/' 
+    }; 
+
+    return this.http.post(this.postUrl, JSON.stringify(body), options);
   }
 }
