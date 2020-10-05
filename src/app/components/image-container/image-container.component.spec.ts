@@ -2,10 +2,11 @@
 // SSD Assignment 02   - Software Engineering 
 // Udayangani Hamy W.C - IT 1602 3574 
 // Ranawake P I        - IT 1609 7520
+//
+// Component to hold an image (placeholder)
 // ******************************************************************
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ImageContainerComponent } from './image-container.component';
 
 describe('ImageContainerComponent', () => {
