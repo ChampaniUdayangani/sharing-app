@@ -30,6 +30,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ![snapifyWebApp](https://user-images.githubusercontent.com/51434067/101052044-2b2dc900-35ac-11eb-8ce8-0b55d241ef32.PNG)
 
+#### ----------------------------------------------------------------------------------------------------------------------------------------------------
+
 ![shareWebApp](https://user-images.githubusercontent.com/51434067/101052103-3d0f6c00-35ac-11eb-851d-a6c0adba474e.PNG)
 
 ### Final output
